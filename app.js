@@ -9,8 +9,21 @@ if (bot === undefined) {
 }
 
 bot.start((ctx) => {
-    ctx.reply('Welcome to AutoZoomBot!');
-    
+    bot.telegram.sendMessage(ctx.chat.id,'Click to check your timetable :)',
+    {
+        reply_markup: {
+            inline_keyboard:[   
+                [
+                    {text: 'JX', callback_data:'jx'},
+                    {text: 'Valencia',callback_data:'val'}
+                ],
+                [
+                    {text: 'Ian', callback_data:'ian'},
+                    {text: 'NatChua',callback_data:'nat'}
+                ]
+            ]
+        }
+    })    
 })
 
 bot.launch();
