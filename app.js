@@ -135,6 +135,9 @@ bot.action('menu',ctx => {
                 [
                     {text: 'Ian', callback_data:'ian'},
                     {text: 'NatChua',callback_data:'nat'}
+                ],
+                [
+                    {text: 'Exit', callback_data: 'exit'}
                 ]
             ]
         }
