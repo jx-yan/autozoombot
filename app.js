@@ -102,7 +102,7 @@ bot.action('nat', ctx => {
 
 bot.action('val', ctx => {
     ctx.deleteMessage();
-    bot.telegram.sendMessage(ctx.chat.id, 'Tue\n0815 - 1130: IS210 - BPAS (G6)\n1530 - 1845: IS216 - WAD2 (G6)\n\nThu\n0815 - 1130: IS211 - IDP (G9)\n\nFri\n1200 - 1515: CORIS1702 - CT (G5)',
+    bot.telegram.sendMessage(ctx.chat.id, 'Tue\n0815 - 1130: IS210 - BPAS (G2)\n1530 - 1845: IS216 - WAD2 (G6)\n\nThu\n0815 - 1130: IS211 - IDP (G9)\n\nFri\n1200 - 1515: CORIS1702 - CT (G5)',
     {
         reply_markup: {
             inline_keyboard: [
